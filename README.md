@@ -1,5 +1,8 @@
-# nrf52_factory_erase
+# nrf52_factory_erase_noserial
 This repository contains the nRF52 Factory Erase firmware for the Meshtastic project.
+
+This fork has been modified to not require a serial connection to initiate the erase function.
+It is untested, so make sure you know how to recover a device when attempting this method.
 
 This is the platformio version of the meshtastic nrf52 factory erase firmware (previous version was based on arduino)
 
