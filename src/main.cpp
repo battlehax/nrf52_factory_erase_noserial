@@ -25,22 +25,22 @@ void enterDfuMode()
 // the setup function runs once when you press reset or power the board
 void setup()
 {
-  Serial.begin(115200);
-  while ( !Serial ) delay(10);   // for nrf52840 with native usb
-  Serial.println("Meshtastic nRF52 Factory Erase firmware for the Meshtastic project.");
-  Serial.println();
+  // Serial.begin(115200);
+  // while ( !Serial ) delay(10);   // for nrf52840 with native usb
+  // Serial.println("Meshtastic nRF52 Factory Erase firmware for the Meshtastic project.");
+  // Serial.println();
 
   // Initialize Internal File System
   InternalFS.begin();
 
-  Serial.print("Formating ... ");
-  delay(1); // for message appear on monitor
+  // Serial.print("Formating ... ");
+  // delay(1); // for message appear on monitor
 
   // Format
   InternalFS.format();
 
-  Serial.println("Done, rebooting device into DFU mode");
-  delay(1); // for message appear on monitor
+  // Serial.println("Done, rebooting device into DFU mode");
+  // delay(1); // for message appear on monitor
   enterDfuMode();
 }
 
